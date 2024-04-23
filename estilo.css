@@ -19,20 +19,20 @@ body{
 }
 /*generalidades*/
 h1{
-    font-size: 4rem;
-    font-weight: 700;
+    font-size: 3rem;
+    font-weight: 600;
     margin-bottom: 20px;
    
 }
 h2{
     font-size: 2.5rem;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 20px;
 }
 header,footer{
     background-color: var(--third-color);
     color: var(--main-color);
-    padding: 20px;
+    padding: 15px;
 }
 /*estilos del header*/
 
@@ -62,9 +62,9 @@ header,footer{
         }
     }
 }
-/*main
-estilos seccion principal
-*/
+/* .main{
+estilos seccion principal */
+
 .sectionTitulos{
     height: 85vh;
     background:linear-gradient(to bottom, #000000a3, #000000a3),url("img/banner-bg.jpg");
@@ -123,6 +123,7 @@ estilos seccion principal
     }
     button{
        margin-bottom:20px;
+       
     }
 }
 /*estilos de section peliculas aclamadas*/
@@ -157,4 +158,14 @@ estilos seccion principal
             }
         }
     }
+}
+.sectionTitulos2{
+    height: 85vh;
+    background:linear-gradient(to bottom, #000000a3, #000000a3),url("img/bg-register.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
