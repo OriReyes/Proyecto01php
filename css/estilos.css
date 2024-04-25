@@ -38,7 +38,7 @@ header,footer{
     color: var(--main-color);
     padding: 20px;
 }
-nav {
+/* nav {
     display: block;
     unicode-bidi: isolate;
 }
@@ -47,7 +47,7 @@ nav {
     height: 15vh;
     position:sticky;
     top:0; 
-    z-index: 10; 
+    z-index: 10;  */
     /* nav{
         height: 100%;
         display:flex;
@@ -68,7 +68,7 @@ nav {
            
         }
     } */
-}
+/* } */
 
 /*main
 estilos seccion principal
@@ -189,14 +189,14 @@ estilos seccion principal
     background-position: center center;
 }
 /*estilos del header*/
-@media (max-width: 800px){
+/* @media (max-width: 800px){
     header{
         nav{
             flex-direction: column;
             row-gap: 0.5px;
         }
     }
-}
+} */
 @media screen and (max-width: 500px) {
     .sectionTitulos {
         .contenedorTitulos {
