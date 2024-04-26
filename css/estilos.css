@@ -142,9 +142,9 @@ estilos seccion principal
       cursor: pointer;
       transition: background-color 0.3s ease;
       
-       background-color: #050001; /* Rojo característico de Netflix */
+       background-color: #050001;
        color: #ffffff;
-       background-color: #840404bc; /* Rojo ligeramente más oscuro al pasar el ratón */
+       background-color: #840404bc; 
     }
 }
 /*estilos de section peliculas aclamadas*/
@@ -206,4 +206,10 @@ estilos seccion principal
     
         }
     }
+}
+input:focus {
+    border: 2px solid deeppink;
+    background: rgb(255, 224, 224);
+    outline: none;
+    box-shadow: 0 0 8px rgba(red, green, blue, alpha);
 }
