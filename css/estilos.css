@@ -213,3 +213,24 @@ input:focus {
     outline: none;
     box-shadow: 0 0 8px rgba(red, green, blue, alpha);
 }
+@media screen and (max-width: 500px) {
+    .peliculasAclamadas {
+        .galeriaAclamadas {
+            width: 100%;
+            backdrop-filter: initial;
+    
+        }
+    }
+}
+.error-text {
+    color: #ff0000;
+    font-size: 0.8rem;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    
+}
+.error-message {
+    color: rgb(164, 13, 13);
+    font-size: 14px;
+    margin-top: 5px;
+}

@@ -11,6 +11,13 @@
     <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <style type="text/javascript">
+      .error-message {
+            color: rgb(164, 13, 13);
+            font-size: 14px;
+            margin-top: 5px;
+        }
+    </style>  
 </head>
 <body class="bodyRegistrarse">
     <header class="bgRosa">
@@ -40,26 +47,35 @@
     </header>
     <main id="main" class="main">
         <section class="sectionTitulos2">
-            <!--pongo get ya que en github pages da error el method post-->
-            <form action="" method="get">
-                <h2 class="tituloRegistrarse">Iniciar Sesión</h2>
-                <div>
-                    <input type="email" placeholder="Email" id="email" name="email">
-                    <div class="error-text"></div>
+          <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Usuario:</label>
+                            <input type="text" class="form-control" id="username" name="username">
+                            <div id="usernameError" class="error-message"></div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo Electrónico:</label>
+                            <input type="email" class="form-control" id="email" name="email">
+                            <div id="emailError" class="error-message"></div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Contraseña:</label>
+                            <input type="password" class="form-control" id="password" name="password">
+                            <div id="passwordError" class="error-message"></div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
                 </div>
-                <div>
-                    <input type="password" placeholder="Contraseña" id="password" name="password">
-                    <div class="error-text"></div>
-                </div>
-                <div>
-                    <input class="boton" type="submit" value="Iniciar Sesión">
-                </div>
-                <div>
-                    <a id="ayuda" class="ayuda" href="./registrarse.html">Registrarse</a>
-                </div>
-            </form>
+            </div>
+        </div>
         </section>
     </main>
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"></script>
+    <script src="../js/validar-registrarse.js"></script>
 </body>
 </html>
