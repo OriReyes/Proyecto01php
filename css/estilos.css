@@ -189,7 +189,7 @@ estilos seccion principal
     background-position: center center;
 }
 /*estilos del header*/
-@media (max-width: 800px){
+@media (max-width: 700px){
     header{
         nav{
             flex-direction: column;
@@ -213,7 +213,7 @@ input:focus {
     outline: none;
     box-shadow: 0 0 8px rgba(red, green, blue, alpha);
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 400px) {
     .peliculasAclamadas {
         .galeriaAclamadas {
             width: 100%;
@@ -224,9 +224,9 @@ input:focus {
 }
 .error-text {
     color: #ff0000;
-    font-size: 0.8rem;
+    font-size: 0.5rem;
     margin-top: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 05px;
     
 }
 .error-message {

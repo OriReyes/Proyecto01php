@@ -41,36 +41,32 @@
     </header>
     <main id="main" class="main">
         <section class="sectionTitulos2">
-            <form action="" method="get">
+          <form id="loginForm">
                 <h2 class="tituloRegistrarse">Registro</h2>
+                <div>
+                  <div class="mb-3">
+                    <input type="text" placeholder="Nombre" class="form-control" id="username" name="username">
+                    <div id="usernameError" class="error-message"></div>
+                  </div>
+                </div>
                 <div class="mb-3">
-                  <label for="username" class="form-label">Nombre:</label>
-                  <input type="text" class="form-control" id="username" name="username">
+                  <input type="text" placeholder="Apellido" class="form-control" id="username" name="username">
                   <div id="usernameError" class="error-message"></div>
                 </div>
                 <div class="mb-3">
-                  <label for="username" class="form-label">Apellido:</label>
-                  <input type="text" class="form-control" id="username" name="username">
-                  <div id="usernameError" class="error-message"></div>
+                  <input type="text" placeholder="Email" class="form-control" id="email" name="email">
+                  <div id="emailError" class="error-message"></div>
                 </div>
                 <div class="mb-3">
-                  <label for="username" class="form-label">Email:</label>
-                  <input type="text" class="form-control" id="username" name="username">
-                  <div id="usernameError" class="error-message"></div>
+                    <input type="password" placeholder="Contraseña" class="form-control" id="password" name="password">
+                    <div id="passwordError" class="error-text"></div>
                 </div>
                 <div class="mb-3">
-                  <label for="password" class="form-label">Contraseña:</label>
-                  <input type="password" class="form-control" id="password" name="password">
-                  <div id="passwordError" class="error-message"></div>
+                    <input type="date" placeholder="Fecha de Nacimiento (dd/mm/aaaa)" class="form-control" id="fechaNacimiento" name="fechaNacimiento">
+                    <div class="error-text"></div>
                 </div>
                 <div class="mb-3">
-                  <label for="password" class="form-label">Fecha de Nacimiento:</label>
-                    <input type="date" class="form-control (dd/mm/aaaa)"  id="fechaNacimiento" name="fechaNacimiento">
-                    <div id="dateError" class="error-message"></div>
-                </div>
-                <div class="mb-3">
-                  <label for="password" class="form-label">Pais:</label>
-                    <select name="pais" id="pais">
+                    <select class="form-control" name="pais" id="pais">
                         <option value="">País</option>
                         <option value="AR">Argentina</option>
                         <option value="BO">Bolivia</option>
@@ -83,7 +79,7 @@
                         <option value="UY">Uruguay</option>
                         <option value="VE">Venezuela</option>
                     </select>
-                    <div id="dateError" class="error-message"></div>
+                    <div class="error-text"></div>
                 </div>
                 <div class="terminos">
                     <input class="check" type="checkbox" id="terminos">
@@ -91,12 +87,16 @@
                     <div class="error-text"></div>
                 </div>
                 <button type="submit" class="btn btn-primary">Registrarse</button>
+                <!-- <div>
+                    <input class="boton" type="submit" value="Registrarse">
+                </div> -->
                 <div>
                     <a class="ayuda" href="#">Necesitas ayuda?</a>
                 </div>
             </form>
         </section>
     </main>
+    <script src="../js/validar-registrarse.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
