@@ -12,6 +12,7 @@
     --secondary-color: #161516;
     --third-color: #850f0f;
     --third-color-t: #840404bc;
+    --four-color: #b94b4bbe;
 }
 /*estilos del body*/
 body{
@@ -32,6 +33,7 @@ h2{
     font-size: 2.0rem;
     font-weight: 600;
     margin-bottom: 20px;
+    text-align: center;
 }
 header,footer{
     background-color: var(--third-color);
@@ -86,7 +88,7 @@ estilos seccion principal
     .contenedorTitulos{
         text-align: center;
         /*efecto blur a un contenedor*/
-        backdrop-filter: blur(8px);
+        /* backdrop-filter: blur(8px); */
         width: 60%;
         margin:0 auto;
         border-radius: 5px;
@@ -207,12 +209,12 @@ estilos seccion principal
         }
     }
 }
-input:focus {
+/* input:focus {
     border: 2px solid deeppink;
     background: rgb(255, 224, 224);
     outline: none;
     box-shadow: 0 0 8px rgba(red, green, blue, alpha);
-}
+} */
 @media screen and (max-width: 400px) {
     .peliculasAclamadas {
         .galeriaAclamadas {
@@ -234,3 +236,68 @@ input:focus {
     font-size: 14px;
     margin-top: 5px;
 }
+.seccionBusqueda{   
+    height: 15vh; 
+    margin-top: 20px;   
+    margin-bottom: 20px;  
+    .contenedorBusqueda{
+        text-align: center;
+        
+        input{            
+            border-radius: 20px;              
+            padding: 0px 20px; 
+            font-size: 1rem;
+            color: var(--main-color);
+            height: 40px;
+        }
+        .inputBuscador{            
+            background-color: var(--third-color);  
+            border: 2px solid var(--secondary-color);          
+            width: 450px;
+
+            &:focus {
+                border: 2px solid rgb(0, 9, 12);
+                border: var(--secondary-color);
+                background: rgb(10, 1, 1);
+                outline: none;
+                box-shadow: 0 0 8px rgba(211, 23, 9, 0.5);
+              }
+        }
+        
+        .btnBuscador{
+            background-color: var(--color-secundario);
+            border: 2px solid var(--color-cuarto);
+            color: var(--color-cuarto);
+            width: 100px;
+            cursor: pointer;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .seccionBusqueda{
+        .contenedorBusqueda{
+            .inputBuscador{    
+                width: 300px
+            }
+        }
+    }
+}
+
+.sectionDetalles {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.64))center center / cover no-repeat, url(../img/mario-bg.jpg);
+        background-position: center center;
+    }
+    @media screen and (max-width: 500px) {
+        .sectionDetalles {
+            .contenedorTitulos {
+                width: 100%;
+                backdrop-filter: initial;
+                background:linear-gradient(to bottom, #000000a3, #000000a3),url("../img/mario-bg.jpg");
+        
+            }
+        }
+    }
