@@ -1,6 +1,28 @@
+function resetErrorMessages() {
+    console.log("voy a limpiar los divs");
+    let errorElements = document.querySelectorAll(".error-message");
+    errorElements.forEach((element)=> {
+        element.innerText = "";
+    });
+    console.log("ya limpie los divs");
+}
+function displayErrorMessage(elementId, message) {
+    let errorElement = document.getElementById(elementId);
+    errorElement.innerText = message;
+}
+function isValidEmail(email) {
+    // Utilizamos una expresión regular para validar el formato del correo electrónico
+    let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    // estructura texto@texto.texto
 
-document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("loginForm").addEventListener("submit", function(event) {
+    return emailPattern.test(email);
+}
+
+
+document.addEventListener("DOMContentLoaded", ()=>{
+    const form = document.getElementById("loginForm");
+    console.log(form);
+    form.addEventListener("submit", (event)=>{
         // Evitar que se envíe el formulario automáticamente
         event.preventDefault();
 
@@ -8,10 +30,10 @@ document.addEventListener("DOMContentLoaded", function() {
         resetErrorMessages();
 
         // Validar los campos
-        var username = document.getElementById("username").value.trim();
-        var email = document.getElementById("email").value.trim();
-        var password = document.getElementById("password").value.trim();
-        var isValid = true;
+        let username = document.getElementById("username").value.trim();
+        let email = document.getElementById("email").value.trim();
+        let password = document.getElementById("password").value.trim();
+        let isValid = true;
 
         if (username === "") {
             displayErrorMessage("usernameError", "Por favor ingrese un usuario.");
@@ -35,22 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
             // document.getElementById("loginForm").submit();
         }
     });
-});
+} );
 
-function isValidEmail(email) {
-    // Utilizamos una expresión regular para validar el formato del correo electrónico
-    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailPattern.test(email);
-}
 
-function displayErrorMessage(elementId, message) {
-    var errorElement = document.getElementById(elementId);
-    errorElement.innerText = message;
-}
-
-function resetErrorMessages() {
-    var errorElements = document.querySelectorAll(".error-message");
-    errorElements.forEach(function(element) {
-        element.innerText = "";
-    });
-}
+document.addEventListener("DOMContentLoaded", validarFormulario);

@@ -11,6 +11,13 @@
     <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <style type="text/javascript">
+      .error-message {
+            color: rgb(164, 13, 13);
+            font-size: 14px;
+            margin-top: 5px;
+        }
+    </style>
 </head>
 <body class="bodyRegistrarse">
     <header class="bgRosa">
@@ -50,8 +57,8 @@
                   </div>
                 </div>
                 <div class="mb-3">
-                  <input type="text" placeholder="Apellido" class="form-control" id="username" name="username">
-                  <div id="usernameError" class="error-message"></div>
+                  <input type="text" placeholder="Apellido" class="form-control" id="lastname" name="lastname">
+                  <div id="lastnameError" class="error-message"></div>
                 </div>
                 <div class="mb-3">
                   <input type="text" placeholder="Email" class="form-control" id="email" name="email">
@@ -59,11 +66,11 @@
                 </div>
                 <div class="mb-3">
                     <input type="password" placeholder="Contraseña" class="form-control" id="password" name="password">
-                    <div id="passwordError" class="error-text"></div>
+                    <div id="passwordError" class="error-message"></div>
                 </div>
                 <div class="mb-3">
                     <input type="date" placeholder="Fecha de Nacimiento (dd/mm/aaaa)" class="form-control" id="fechaNacimiento" name="fechaNacimiento">
-                    <div class="error-text"></div>
+                    <div class="error-message"></div>
                 </div>
                 <div class="mb-3">
                     <select class="form-control" name="pais" id="pais">
@@ -79,12 +86,12 @@
                         <option value="UY">Uruguay</option>
                         <option value="VE">Venezuela</option>
                     </select>
-                    <div class="error-text"></div>
+                    <div class="error-message"></div>
                 </div>
                 <div class="terminos">
                     <input class="check" type="checkbox" id="terminos">
                     <label class="textoCheck" for="terminos">Acepto términos y condiciones</label>
-                    <div class="error-text"></div>
+                    <div class="error-message"></div>
                 </div>
                 <button type="submit" class="btn btn-primary">Registrarse</button>
                 <!-- <div>
