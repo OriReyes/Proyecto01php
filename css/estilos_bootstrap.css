@@ -2,8 +2,8 @@
 :root{
     --main-color: #f3f3f3;
     --secondary-color: #161516;
-    --third-color: #850f0f;
-    --third-color-t: #840404bc;
+    --third-color: #aa1c8b;
+    --third-color-t: #83147dbc;
 }
 *{
     margin: 0;
