@@ -203,7 +203,7 @@ estilos seccion principal
         }
     }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
     .sectionTitulos {
         .contenedorTitulos {
             height: 90vh;
