@@ -41,7 +41,7 @@ header{
         height: initial;
         nav{
             flex-direction: column;
-            row-gap: 20px;
+            row-gap: 15px;
         }
     }
 }

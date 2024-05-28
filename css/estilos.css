@@ -8,10 +8,10 @@
 }
 /*configuracion de variables*/
 :root{
-    --main-color: #f3f3f3;
+    --main-color: #f1cfe9;
     --secondary-color: #161516;
     --third-color: #aa1c8b;
-    --third-color-t: #83147dbc;
+    --third-color-t: #d433ccbc;
     --four-color: #be3f9fbe;
 }
 /*estilos del body*/
@@ -27,19 +27,23 @@ h1{
     font-size: 2.5rem;
     font-weight: 600;
     margin-bottom: 20px;
+    text-shadow: 3px 3px 5px #9c0e6d;
    
 }
 h2{
-    font-size: 2.0rem;
+    font-size: 2.rem;
     font-weight: 600;
     margin-bottom: 20px;
     text-align: center;
+    text-shadow: 3px 3px 5px #9c0e6d;
 }
 header,footer{
-    background-color: var(--third-color);
+    background-image:  linear-gradient(to right top, #1e0537, #3a155c, #592582, #7b36ab, #a047d5);
     color: var(--main-color);
-    padding: 20px;
+    padding: 10px;
+
 }
+    
 /* nav {
     display: block;
     unicode-bidi: isolate;
@@ -202,10 +206,13 @@ estilos seccion principal
 @media screen and (max-width: 500px) {
     .sectionTitulos {
         .contenedorTitulos {
+            height: 90vh;
             width: 100%;
             backdrop-filter: initial;
             background:linear-gradient(to bottom, #000000a3, #000000a3),url("../img/imagenprincipal2.jpg");
-    
+            background-size: cover;
+            justify-content: center;
+            align-items: center;
         }
     }
 }
@@ -233,7 +240,7 @@ estilos seccion principal
 }
 .error-message {
     color: rgb(164, 13, 13);
-    font-size: 14px;
+    font-size: 11px;
     margin-top: 5px;
 }
 .seccionBusqueda{   
@@ -300,7 +307,23 @@ estilos seccion principal
                 width: 100%;
                 backdrop-filter: initial;
                 background:linear-gradient(to bottom, #000000a3, #000000a3),url("../img/mario-bg.jpg");
+                display: flex;
         
             }
         }
     }
+    @keyframes float {
+        0% {
+          transform: translateX(0);
+        }
+        60% {
+          transform: translateX(6px);
+        }
+        0% {
+          transform: translateX(0);
+        }
+      }
+.animacion {
+        animation: float 2s infinite;
+      }
+      
