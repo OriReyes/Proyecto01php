@@ -90,7 +90,7 @@ header,footer{
         div{
             width: 250px;
             height: 350px;
-            box-shadow: 10px 10px 47px -6px rgba(255,255,255,0.42);
+            box-shadow: 10px 10px 47px -6px rgba(150, 4, 101, 0.42);
             border-radius: 5px;
             img{
                 width: 100%;
@@ -140,7 +140,7 @@ header,footer{
             width: 220px;
             height: 350px;
             flex-shrink: 0;
-            box-shadow: 10px 10px 47px -45px rgba(255,255,255,0.29);
+            box-shadow: 10px 10px 47px -45px rgba(109, 19, 94, 0.774);
            
             img{
                 width: 100%;
@@ -168,7 +168,7 @@ header,footer{
         }
     }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width:600px) {
     .sectionTitulos {
         .contenedorTitulos {
             height: 90vh;
@@ -178,6 +178,7 @@ header,footer{
             background-size: cover;
             justify-content: center;
             align-items: center;
+            text-align: center;
         }
     }
 }
