@@ -44,41 +44,6 @@ header,footer{
 
 }
     
-/* nav {
-    display: block;
-    unicode-bidi: isolate;
-}
-
-.header{
-    height: 15vh;
-    position:sticky;
-    top:0; 
-    z-index: 10;  */
-    /* nav{
-        height: 100%;
-        display:flex;
-        align-items: center;
-        justify-content: space-between;
-        a{
-            text-decoration: none;
-            color: var(--main-color);
-            font-size:1.6rem;
-        }
-        ul{
-            list-style: none;
-            display:flex;
-            column-gap: 20px;
-            a{
-                font-size:1.4rem;
-            }
-           
-        }
-    } */
-/* } */
-
-/*main
-estilos seccion principal
-*/
 .sectionTitulos{
     height: 90vh;
     background:linear-gradient(to bottom, #000000a3, #000000a3),url("../img/imagenprincipal.jpg");
@@ -286,21 +251,18 @@ estilos seccion principal
         .contenedorBusqueda{
             .inputBuscador{    
                 width: 300px
+
             }
         }
     }
 }
 
 .sectionDetalles {
-    /* height: 90vh; */
     background:linear-gradient(to bottom, #000000a3, #000000a3),url("../img/mario-bg.jpg");
     background-position: center;
-    /* background-size: cover; */
-    /* background-repeat: no-repeat; */
     display: flex;
-    /* justify-content: center; */
-   /*  align-items: center; */
     }
+
     @media screen and (max-width: 500px) {
         .sectionDetalles {
             .contenedorTitulos {
@@ -326,4 +288,26 @@ estilos seccion principal
 .animacion {
         animation: float 2s infinite;
       }
-      
+
+      .botonPelicula {
+        background-color: #c829ce;
+        color: white;
+        padding: 10px 20px;
+        border: none; 
+        border-radius: 5px; 
+        cursor: pointer;
+        transition: all 0.3s ease; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        font-weight: bold; 
+        text-transform: uppercase;
+     
+    }
+    
+    .botonPelicula:hover {
+        background-color: #7718c5;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+    }
+    
+    .botonPelicula:active {
+        transform: translateY(2px);
+    }

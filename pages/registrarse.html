@@ -53,28 +53,29 @@
                 <h2 class="animate__animated animate__zoomInUp">Registro</h2>
                 <div>
                   <div class="mb-3">
-                    <input type="text" placeholder="Nombre" class="form-control" id="username" name="username">
+                    <input type="text" placeholder="Nombre" class="form-control" id="username" name="username" required class="inputBuscador">
                     <div id="usernameError" class="error-message"></div>
                   </div>
                 </div>
                 <div class="mb-3">
-                  <input type="text" placeholder="Apellido" class="form-control" id="lastname" name="lastname">
+                  <input type="text" placeholder="Apellido" class="form-control" id="username" name="username" required class="inputBuscador">
                   <div id="lastnameError" class="error-message"></div>
                 </div>
                 <div class="mb-3">
-                  <input type="text" placeholder="Email" class="form-control" id="email" name="email">
+                  <input type="text" placeholder="Email" class="form-control" id="email" name="email" required class="inputBuscador">
                   <div id="emailError" class="error-message"></div>
                 </div>
                 <div class="mb-3">
-                    <input type="password" placeholder="Contraseña" class="form-control" id="password" name="password">
+                    <input type="password" placeholder="Contraseña" class="form-control" id="password" name="password" required class="inputBuscador">
                     <div id="passwordError" class="error-message"></div>
                 </div>
                 <div class="mb-3">
-                    <input type="date" placeholder="Fecha(dd/mm/aaaa)" class="form-control" id="fechaNacimiento" name="fechaNacimiento">
+                  <label class="form-label">Fecha de Nacimiento:</label>
+                    <input type="date" placeholder="Fecha(dd/mm/aaaa)" class="form-control" id="fechaNacimiento" name="fechaNacimiento"required class="inputBuscador">
                     <div class="error-message"></div>
                 </div>
                 <div class="mb-3">
-                    <select class="form-control" name="pais" id="pais">
+                    <select class="form-control" name="pais" id="pais" required class="inputBuscador">
                         <option value="">País</option>
                         <option value="AR">Argentina</option>
                         <option value="BO">Bolivia</option>
@@ -94,7 +95,7 @@
                     <label class="textoCheck" for="terminos">Acepto términos y condiciones</label>
                     <div class="error-message"></div>
                 </div>
-                <button type="submit" class="btn btn-primary">Registrarse</button>
+                <button type="submit" class="botonPelicula">Registrarse</button>
                 <!-- <div>
                     <input class="boton" type="submit" value="Registrarse">
                 </div> -->
