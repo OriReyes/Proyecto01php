@@ -63,42 +63,42 @@
         <hr>
         <section id="tendencias" class="peliculasTendencias">
             <h2 href="#tendencias" class="animacion">Las tendencias de hoy</h2>
-            <div class="galeriaTendencias">
+            <div class="galeriaTendencias" id="tendenciasContainer">
                 <div> 
-                    <a class="" href="pages/detalles.html"><img  src="img/peli_1.jpg" alt="The Beekeeper" loading="lazy"></a>
+                    <a href="pages/detalles.html"><img class="animacion-imagen" src="img/peli_1.jpg" alt="The Beekeeper" loading="lazy"></a>
                 </div>
                 <div>
-                    <a href="pages/detalles.html"><img  src="img/peli_2.jpg" alt="Badland Hunters" loading="lazy"></a>
+                    <a href="pages/detalles.html"><img  class="animacion-imagen" src="img/peli_2.jpg" alt="Badland Hunters" loading="lazy"></a>
                 </div>
                 <div>
-                    <a href="pages/detalles.html"><img  src="img/peli_3.jpg" alt="The Marvels" loading="lazy"></a>
+                    <a href="pages/detalles.html"><img  class="animacion-imagen" src="img/peli_3.jpg" alt="The Marvels" loading="lazy"></a>
                 </div>
                 <div>
-                    <a href="pages/detalles.html"><img  src="img/peli_4.jpg" alt="Wonka" loading="lazy"></a>
+                    <a href="pages/detalles.html"><img  class="animacion-imagen" src="img/peli_4.jpg" alt="Wonka" loading="lazy"></a>
                 </div>
                 <div>
-                    <a href="pages/detalles.html"><img  src="img/peli_5.jpg" alt="Aquaman and the Lost Kingdom" loading="lazy"></a>
+                    <a href="pages/detalles.html"><img  class="animacion-imagen" src="img/peli_5.jpg" alt="Aquaman and the Lost Kingdom" loading="lazy"></a>
                 </div>
                 <div>
-                    <a href="pages/detalles.html"><img  src="img/peli_6.jpg" alt="Migration" loading="lazy"></a>
+                    <a href="pages/detalles.html"><img  class="animacion-imagen" src="img/peli_6.jpg" alt="Migration" loading="lazy"></a>
                 </div>
                 <div>
-                    <a href="pages/detalles.html"><img  src="img/peli_7.jpg" alt="Sixty Minutes" loading="lazy"></a>
+                    <a href="pages/detalles.html"><img  class="animacion-imagen" src="img/peli_7.jpg" alt="Sixty Minutes" loading="lazy"></a>
                 </div>
                 <div>
-                    <a href="pages/detalles.html"><img  src="img/peli_8.jpg" alt="Wish" loading="lazy"></a>
+                    <a href="pages/detalles.html"><img  class="animacion-imagen" src="img/peli_8.jpg" alt="Wish" loading="lazy"></a>
                 </div>
                 <div>
-                    <a href="pages/detalles.html"><img  src="img/peli_9.jpg" alt="The Masked Saint" loading="lazy"></a>
+                    <a href="pages/detalles.html"><img  class="animacion-imagen" src="img/peli_9.jpg" alt="The Masked Saint" loading="lazy"></a>
                 </div>
                 <div>
-                    <a href="pages/detalles.html"><img  src="img/peli_10.jpg" alt="Due Justice" loading="lazy"></a>
+                    <a href="pages/detalles.html"><img  class="animacion-imagen" src="img/peli_10.jpg" alt="Due Justice" loading="lazy"></a>
                 </div>
                 <div>
-                    <a href="pages/detalles.html"><img  src="img/peli_11.jpg" alt="Orion and the dark" loading="lazy"></a>
+                    <a href="pages/detalles.html"><img  class="animacion-imagen" src="img/peli_11.jpg" alt="Orion and the dark" loading="lazy"></a>
                 </div>
                 <div>
-                    <a href="pages/detalles.html"><img  src="img/peli_12.jpg" alt="Wish" loading="lazy"></a>
+                    <a href="pages/detalles.html"><img  class="animacion-imagen" src="img/peli_12.jpg" alt="Wish" loading="lazy"></a>
                 </div>
             </div>
             <a href="./pages/pelis.html" class="botonPelicula siguiente" >Siguiente</a>
@@ -108,7 +108,7 @@
             <h2 class="animacion">Las más aclamadas</h2>
              <div class="galeriaAclamadas">
                 <div >
-                    <img  src="img/aclamada_1.jpg" alt="aclamada_1" loading="lazy">
+                    <img src="img/aclamada_1.jpg" alt="aclamada_1" loading="lazy">
                 </div>
                 <div >
                     <img  src="img/aclamada_2.jpg" alt="aclamada_2" loading="lazy">
@@ -160,6 +160,11 @@
             <img src="./img/flecha-hacia-arriba.png" alt="ir arriba flecha">
         </a>
     </footer>
-    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!--script que trae peliculas de un servidor de tercero y crea cada pelicula en el dom-->
+    <script src="./js/cargar_peli_index.js"></script>
 </body>
 </html>

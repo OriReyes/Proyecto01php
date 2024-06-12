@@ -312,3 +312,11 @@ header,footer{
     .botonPelicula:active {
         transform: translateY(2px);
     }
+
+    .animacion-imagen {
+        transition: transform 0.3s ease;
+      }
+      
+      .animacion-imagen:hover {
+        transform: scale(1.1);
+      }

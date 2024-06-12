@@ -24,7 +24,7 @@
 
 <body>
     <div class="container bgRosa">
-        <h2 class="text-center pt-5 mb-5 fs-1">Lista de Películas Api</h2>
+        <h2 class="text-center animacion">Lista de Películas Api</h2>
         <a href="../index.html" class="botonPelicula Anterior" onclick="actualizarYcargarPeliculas(paginaActual - 1)">Anterior</a>
         <a href="#" class="botonPelicula Siguiente" onclick="actualizarYcargarPeliculas(paginaActual + 1)">Siguiente</a> <hr>
         <section id="peliculasSection" class="row">
@@ -40,8 +40,8 @@
             // creamos la columna de bootstrap 
             function actualizarYcargarPeliculas(nuevaPagina) {
             if (nuevaPagina > 0) {
-                paginaActual = nuevaPagina;
-                cargarPeliculas(paginaActual);
+                paginaActual = nuevaPagina +1;
+                actualizarYcargarPeliculas(paginaActual);
     }
 }
             const card = document.createElement('div');
@@ -103,7 +103,7 @@
                     peliculasSection.appendChild(peliculaCard);// Añadimos la tarjeta de película al contenedor
                     const actualizarYcargarPeliculas = (nuevaPagina) => {
                 paginaActual = nuevaPagina;
-                cargarPeliculas(paginaActual);
+                actualizarYcargarPeliculas(paginaActual);
                 
         };
                 });// Iteramos sobre las películas
@@ -119,7 +119,7 @@
          // Llamar a la función para agregar las tarjetas de películas cuando el DOM esté cargado
          // document.addEventListener("DOMContentLoaded", agregarTarjetasPeliculas);
          // agregarTarjetasPeliculas();
-         document.addEventListener("DOMContentLoaded", () => { actualizarYcargarPeliculas(1)});
+         document.addEventListener("DOMContentLoaded", () => { actualizarYcargarPeliculas()});
         // cargarPeliculas.addEventListener('click', cargarPeliculas);
     </script>
 
