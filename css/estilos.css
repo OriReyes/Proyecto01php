@@ -43,7 +43,7 @@ header,footer{
     padding: 10px;
 
 }
-.header{
+/* .header{
     height: 15vh;
     position:sticky;
     top:0; 
@@ -68,7 +68,7 @@ header,footer{
            
         }
     }
-}
+} */
     
 .sectionTitulos{
     height: 85vh;
@@ -206,7 +206,7 @@ header,footer{
             justify-content: center;
             align-items: center;
             text-align: center;
-            /* flex-direction: column; */
+            flex-direction: column;
         }
     }
 
