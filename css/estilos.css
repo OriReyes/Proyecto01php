@@ -43,6 +43,32 @@ header,footer{
     padding: 10px;
 
 }
+.header{
+    height: 15vh;
+    position:sticky;
+    top:0; 
+    z-index: 10; 
+    nav{
+        height: 100%;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        a{
+            text-decoration: none;
+            color: var(--main-color);
+            font-size:1.6rem;
+        }
+        ul{
+            list-style: none;
+            display:flex;
+            column-gap: 20px;
+            a{
+                font-size:1.4rem;
+            }
+           
+        }
+    }
+}
     
 .sectionTitulos{
     height: 85vh;
@@ -161,28 +187,29 @@ header,footer{
     flex-direction: column;
 }
 /*estilos del header*/
-@media screen and (max-width:500px) {
-    header{
+@media screen and (max-width:600px) {
+    header{ 
         nav{
             flex-direction: column;
-            row-gap: 20px;
+            row-gap: 30px;
         }
     }
 }
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
     .sectionTitulos {
-        .contenedorTitulos {
             height: 85vh;
             width: 100%;
-            /* backdrop-filter: initial; */
-            background:linear-gradient(to bottom, #000000a3, #000000a3),url("../img/imagenprincipal2.jpg");
+            backdrop-filter: initial;
+            background: linear-gradient(rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.64))center center / cover no-repeat, url(../img/imagenprincipal2.jpg);
             background-size: cover;
+            display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
+            /* flex-direction: column; */
         }
     }
-}
+
 /* input:focus {
     border: 2px solid deeppink;
     background: rgb(255, 224, 224);
@@ -194,6 +221,7 @@ header,footer{
         .galeriaAclamadas {
             width: 100%;
             backdrop-filter: initial;
+            
     
         }
     }
