@@ -45,7 +45,7 @@ header,footer{
 }
     
 .sectionTitulos{
-    height: 90vh;
+    height: 85vh;
     background:linear-gradient(to bottom, #000000a3, #000000a3),url("../img/imagenprincipal.jpg");
     background-position: center;
     background-size: cover;
@@ -158,9 +158,10 @@ header,footer{
     align-items: center;
     background: linear-gradient(rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.64))center center / cover no-repeat, url(../img/bg-register.jpg);
     background-position: center center;
+    flex-direction: column;
 }
 /*estilos del header*/
-@media (max-width: 700px){
+@media screen and (max-width:500px) {
     header{
         nav{
             flex-direction: column;
@@ -171,9 +172,9 @@ header,footer{
 @media screen and (max-width:600px) {
     .sectionTitulos {
         .contenedorTitulos {
-            height: 90vh;
+            height: 85vh;
             width: 100%;
-            backdrop-filter: initial;
+            /* backdrop-filter: initial; */
             background:linear-gradient(to bottom, #000000a3, #000000a3),url("../img/imagenprincipal2.jpg");
             background-size: cover;
             justify-content: center;
