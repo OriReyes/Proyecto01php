@@ -43,32 +43,7 @@ header,footer{
     padding: 10px;
 
 }
-/* .header{
-    height: 15vh;
-    position:sticky;
-    top:0; 
-    z-index: 10; 
-    nav{
-        height: 100%;
-        display:flex;
-        align-items: center;
-        justify-content: space-between;
-        a{
-            text-decoration: none;
-            color: var(--main-color);
-            font-size:1.6rem;
-        }
-        ul{
-            list-style: none;
-            display:flex;
-            column-gap: 20px;
-            a{
-                font-size:1.4rem;
-            }
-           
-        }
-    }
-} */
+
     
 .sectionTitulos{
     height: 85vh;
